@@ -1,0 +1,1144 @@
+{
+    "common": {
+        "conditions": [
+            {
+                "id": "is-last-action-completed-successfully",
+                "scriptName": "IsLastActionCompletedSuccessfully"
+            }
+        ],
+        "actions": [
+            {
+                "id": "add-action-parameter",
+                "scriptName": "AddActionParameter",
+                "params": [
+                    {
+                        "id": "key",
+                        "type": "string"
+                    },
+                    {
+                        "id": "value",
+                        "type": "any"
+                    }
+                ]
+            },
+            {
+                "id": "add-bool-action-parameter",
+                "scriptName": "AddBoolActionParameter",
+                "params": [
+                    {
+                        "id": "key",
+                        "type": "string"
+                    },
+                    {
+                        "id": "value",
+                        "type": "boolean"
+                    }
+                ]
+            }
+        ]
+    },
+    "platform": {
+        "conditions": [
+            {
+                "id": "on-get-server-time-completed",
+                "scriptName": "OnGetServerTimeCompleted",
+                "isTrigger": true,
+                "isInvertible": false,
+                "isCompatibleWithTriggers": false
+            },
+            {
+                "id": "has-server-time",
+                "scriptName": "HasServerTime"
+            }
+        ],
+        "expressions": [
+            {
+                "id": "platform-id",
+                "expressionName": "PlatformId",
+                "returnType": "string"
+            },
+            {
+                "id": "platform-language",
+                "expressionName": "PlatformLanguage",
+                "returnType": "string"
+            },
+            {
+                "id": "platform-payload",
+                "expressionName": "PlatformPayload",
+                "returnType": "string"
+            },
+            {
+                "id": "platform-tld",
+                "expressionName": "PlatformTld",
+                "returnType": "string"
+            },
+            {
+                "id": "server-time",
+                "expressionName": "ServerTime",
+                "returnType": "number"
+            }
+        ],
+        "actions": [
+            {
+                "id": "send-message",
+                "scriptName": "SendMessage",
+                "isAsync": false,
+                "params": [
+                    {
+                        "id": "message",
+                        "type": "combo",
+                        "items": ["game-ready", "in-game-loading-started", "in-game-loading-stopped", "gameplay-started", "gameplay-stopped", "player-got-achievement"]
+                    }
+                ]
+            },
+            {
+                "id": "get-server-time",
+                "scriptName": "GetServerTime",
+                "isAsync": true
+            }
+        ]
+    },
+    "device": {
+        "conditions": [
+            {
+                "id": "is-mobile",
+                "scriptName": "IsMobile"
+            },
+            {
+                "id": "is-tablet",
+                "scriptName": "IsTablet"
+            },
+            {
+                "id": "is-desktop",
+                "scriptName": "IsDesktop"
+            },
+            {
+                "id": "is-tv",
+                "scriptName": "IsTv"
+            }
+        ],
+        "expressions": [
+            {
+                "id": "device-type",
+                "expressionName": "DeviceType",
+                "returnType": "string"
+            }
+        ]
+    },
+    "player": {
+        "conditions": [
+            {
+                "id": "is-player-authorization-supported",
+                "scriptName": "IsPlayerAuthorizationSupported"
+            },
+
+            {
+                "id": "is-player-authorized",
+                "scriptName": "IsPlayerAuthorized"
+            },
+            {
+                "id": "on-authorize-player-completed",
+                "scriptName": "OnAuthorizePlayerCompleted",
+                "isTrigger": true,
+                "isInvertible": false,
+                "isCompatibleWithTriggers": false
+            },
+
+            {
+                "id": "does-player-have-name",
+                "scriptName": "DoesPlayerHaveName"
+            },
+            {
+                "id": "does-player-have-photo",
+                "scriptName": "DoesPlayerHavePhoto",
+                "params": [
+                    {
+                        "id": "index",
+                        "type": "number"
+                    }
+                ]
+            }
+        ],
+        "actions": [
+            {
+                "id": "authorize-player",
+                "scriptName": "AuthorizePlayer",
+                "isAsync": true
+            }
+        ],
+        "expressions": [
+            {
+                "id": "player-id",
+                "expressionName": "PlayerId",
+                "returnType": "string"
+            },
+            {
+                "id": "player-name",
+                "expressionName": "PlayerName",
+                "returnType": "string"
+            },
+            {
+                "id": "player-photos-count",
+                "expressionName": "PlayerPhotosCount",
+                "returnType": "number"
+            },
+            {
+                "id": "player-photo",
+                "expressionName": "PlayerPhoto",
+                "returnType": "string",
+                "params": [
+                    {
+                        "id": "index",
+                        "type": "number"
+                    }
+                ]
+            }
+        ]
+    },
+    "game": {
+        "conditions": [
+            {
+                "id": "on-visibility-state-changed",
+                "scriptName": "OnVisibilityStateChanged",
+                "isTrigger": true,
+                "isInvertible": false,
+                "isCompatibleWithTriggers": false
+            }
+        ],
+        "expressions": [
+            {
+                "id": "visibility-state",
+                "expressionName": "VisibilityState",
+                "returnType": "string"
+            }
+        ]
+    },
+    "storage": {
+        "conditions": [
+            {
+                "id": "has-storage-data",
+                "scriptName": "HasStorageData",
+                "params": [
+                    {
+                        "id": "key",
+                        "type": "string"
+                    }
+                ]
+            },
+            {
+                "id": "is-storage-supported",
+                "scriptName": "IsStorageSupported",
+                "params": [
+                    {
+                        "id": "storage-type",
+                        "type": "combo",
+                        "items": ["local-storage", "platform-internal"]
+                    }
+                ]
+            },
+            {
+                "id": "is-storage-available",
+                "scriptName": "IsStorageAvailable",
+                "params": [
+                    {
+                        "id": "storage-type",
+                        "type": "combo",
+                        "items": ["local-storage", "platform-internal"]
+                    }
+                ]
+            },
+
+            {
+                "id": "on-storage-data-get-request-completed",
+                "scriptName": "OnStorageDataGetRequestCompleted",
+                "isTrigger": true,
+                "isInvertible": false,
+                "isCompatibleWithTriggers": false
+            },
+            {
+                "id": "on-storage-data-set-request-completed",
+                "scriptName": "OnStorageDataSetRequestCompleted",
+                "isTrigger": true,
+                "isInvertible": false,
+                "isCompatibleWithTriggers": false
+            },
+            {
+                "id": "on-storage-data-delete-request-completed",
+                "scriptName": "OnStorageDataDeleteRequestCompleted",
+                "isTrigger": true,
+                "isInvertible": false,
+                "isCompatibleWithTriggers": false
+            }
+        ],
+        "actions": [
+            {
+                "id": "append-storage-data-get-request",
+                "scriptName": "AppendStorageDataGetRequest",
+                "params": [
+                    {
+                        "id": "key",
+                        "type": "string"
+                    }
+                ]
+            },
+            {
+                "id": "send-storage-data-get-request",
+                "scriptName": "SendStorageDataGetRequest",
+                "isAsync": true,
+                "params": [
+                    {
+                        "id": "storage-type",
+                        "type": "combo",
+                        "items": ["default", "local-storage", "platform-internal"]
+                    }
+                ]
+            },
+            {
+                "id": "append-storage-data-set-request",
+                "scriptName": "AppendStorageDataSetRequest",
+                "params": [
+                    {
+                        "id": "key",
+                        "type": "string"
+                    },
+                    {
+                        "id": "value",
+                        "type": "any"
+                    }
+                ]
+            },
+            {
+                "id": "send-storage-data-set-request",
+                "scriptName": "SendStorageDataSetRequest",
+                "isAsync": true,
+                "params": [
+                    {
+                        "id": "storage-type",
+                        "type": "combo",
+                        "items": ["default", "local-storage", "platform-internal"]
+                    }
+                ]
+            },
+            {
+                "id": "append-storage-data-delete-request",
+                "scriptName": "AppendStorageDataDeleteRequest",
+                "params": [
+                    {
+                        "id": "key",
+                        "type": "string"
+                    }
+                ]
+            },
+            {
+                "id": "send-storage-data-delete-request",
+                "scriptName": "SendStorageDataDeleteRequest",
+                "isAsync": true,
+                "params": [
+                    {
+                        "id": "storage-type",
+                        "type": "combo",
+                        "items": ["default", "local-storage", "platform-internal"]
+                    }
+                ]
+            }
+        ],
+        "expressions": [
+            {
+                "id": "storage-data",
+                "expressionName": "StorageData",
+                "returnType": "any",
+                "params": [
+                    {
+                        "id": "key",
+                        "type": "string"
+                    }
+                ]
+            },
+            {
+                "id": "storage-data-as-json",
+                "expressionName": "StorageDataAsJSON",
+                "returnType": "string",
+                "params": [
+                    {
+                        "id": "key",
+                        "type": "string"
+                    }
+                ]
+            },
+            {
+                "id": "default-storage-type",
+                "expressionName": "DefaultStorageType",
+                "returnType": "string"
+            }
+        ]
+    },
+    "advertisement": {
+        "conditions": [
+            {
+                "id": "is-banner-supported",
+                "scriptName": "IsBannerSupported"
+            },
+            {
+                "id": "on-banner-state-changed",
+                "scriptName": "OnBannerStateChanged",
+                "isTrigger": true,
+                "isInvertible": false,
+                "isCompatibleWithTriggers": false
+            },
+            {
+                "id": "on-banner-loading",
+                "scriptName": "OnBannerLoading",
+                "isTrigger": true,
+                "isInvertible": false,
+                "isCompatibleWithTriggers": false
+            },
+            {
+                "id": "on-banner-shown",
+                "scriptName": "OnBannerShown",
+                "isTrigger": true,
+                "isInvertible": false,
+                "isCompatibleWithTriggers": false
+            },
+            {
+                "id": "on-banner-hidden",
+                "scriptName": "OnBannerHidden",
+                "isTrigger": true,
+                "isInvertible": false,
+                "isCompatibleWithTriggers": false
+            },
+            {
+                "id": "on-banner-failed",
+                "scriptName": "OnBannerFailed",
+                "isTrigger": true,
+                "isInvertible": false,
+                "isCompatibleWithTriggers": false
+            },
+
+            {
+                "id": "on-interstitial-state-changed",
+                "scriptName": "OnInterstitialStateChanged",
+                "isTrigger": true,
+                "isInvertible": false,
+                "isCompatibleWithTriggers": false
+            },
+            {
+                "id": "on-interstitial-loading",
+                "scriptName": "OnInterstitialLoading",
+                "isTrigger": true,
+                "isInvertible": false,
+                "isCompatibleWithTriggers": false
+            },
+            {
+                "id": "on-interstitial-opened",
+                "scriptName": "OnInterstitialOpened",
+                "isTrigger": true,
+                "isInvertible": false,
+                "isCompatibleWithTriggers": false
+            },
+            {
+                "id": "on-interstitial-closed",
+                "scriptName": "OnInterstitialClosed",
+                "isTrigger": true,
+                "isInvertible": false,
+                "isCompatibleWithTriggers": false
+            },
+            {
+                "id": "on-interstitial-failed",
+                "scriptName": "OnInterstitialFailed",
+                "isTrigger": true,
+                "isInvertible": false,
+                "isCompatibleWithTriggers": false
+            },
+
+            {
+                "id": "on-rewarded-state-changed",
+                "scriptName": "OnRewardedStateChanged",
+                "isTrigger": true,
+                "isInvertible": false,
+                "isCompatibleWithTriggers": false
+            },
+            {
+                "id": "on-rewarded-loading",
+                "scriptName": "OnRewardedLoading",
+                "isTrigger": true,
+                "isInvertible": false,
+                "isCompatibleWithTriggers": false
+            },
+            {
+                "id": "on-rewarded-opened",
+                "scriptName": "OnRewardedOpened",
+                "isTrigger": true,
+                "isInvertible": false,
+                "isCompatibleWithTriggers": false
+            },
+            {
+                "id": "on-rewarded-rewarded",
+                "scriptName": "OnRewardedRewarded",
+                "isTrigger": true,
+                "isInvertible": false,
+                "isCompatibleWithTriggers": false
+            },
+            {
+                "id": "on-rewarded-closed",
+                "scriptName": "OnRewardedClosed",
+                "isTrigger": true,
+                "isInvertible": false,
+                "isCompatibleWithTriggers": false
+            },
+            {
+                "id": "on-rewarded-failed",
+                "scriptName": "OnRewardedFailed",
+                "isTrigger": true,
+                "isInvertible": false,
+                "isCompatibleWithTriggers": false
+            },
+            {
+                "id": "on-check-adblock-completed",
+                "scriptName": "OnCheckAdBlockCompleted",
+                "isTrigger": true,
+                "isInvertible": false,
+                "isCompatibleWithTriggers": false
+            },
+            {
+                "id": "is-adblock-detected",
+                "scriptName": "IsAdBlockDetected"
+            }
+        ],
+        "actions": [
+            {
+                "id": "set-minimum-delay-between-interstitial",
+                "scriptName": "SetMinimumDelayBetweenInterstitial",
+                "isAsync": false,
+                "params": [
+                    {
+                        "id": "seconds",
+                        "type": "number"
+                    }
+                ]
+            },
+            {
+                "id": "show-banner",
+                "scriptName": "ShowBanner",
+                "isAsync": false
+            },
+            {
+                "id": "hide-banner",
+                "scriptName": "HideBanner",
+                "isAsync": false
+            },
+            {
+                "id": "show-interstitial",
+                "scriptName": "ShowInterstitial",
+                "isAsync": false,
+                "params": [
+                    {
+                        "id": "ignore-delay",
+                        "type": "boolean"
+                    }
+                ]
+            },
+            {
+                "id": "show-rewarded",
+                "scriptName": "ShowRewarded",
+                "isAsync": false
+            },
+            {
+                "id": "check-adblock",
+                "scriptName": "CheckAdBlock",
+                "isAsync": true
+            }
+        ],
+        "expressions": [
+            {
+                "id": "minimum-delay-between-interstitial",
+                "expressionName": "MinimumDelayBetweenInterstitial",
+                "returnType": "number"
+            },
+            {
+                "id": "banner-state",
+                "expressionName": "BannerState",
+                "returnType": "string"
+            },
+            {
+                "id": "interstitial-state",
+                "expressionName": "InterstitialState",
+                "returnType": "string"
+            },
+            {
+                "id": "rewarded-state",
+                "expressionName": "RewardedState",
+                "returnType": "string"
+            }
+        ]
+    },
+    "social": {
+        "conditions": [
+            {
+                "id": "is-share-supported",
+                "scriptName": "IsShareSupported"
+            },
+            {
+                "id": "on-share-completed",
+                "scriptName": "OnShareCompleted",
+                "isTrigger": true,
+                "isInvertible": false,
+                "isCompatibleWithTriggers": false
+            },
+
+            {
+                "id": "is-invite-friends-supported",
+                "scriptName": "IsInviteFriendsSupported"
+            },
+            {
+                "id": "on-invite-friends-completed",
+                "scriptName": "OnInviteFriendsCompleted",
+                "isTrigger": true,
+                "isInvertible": false,
+                "isCompatibleWithTriggers": false
+            },
+
+            {
+                "id": "is-join-community-supported",
+                "scriptName": "IsJoinCommunitySupported"
+            },
+            {
+                "id": "on-join-community-completed",
+                "scriptName": "OnJoinCommunityCompleted",
+                "isTrigger": true,
+                "isInvertible": false,
+                "isCompatibleWithTriggers": false
+            },
+
+            {
+                "id": "is-create-post-supported",
+                "scriptName": "IsCreatePostSupported"
+            },
+            {
+                "id": "on-create-post-completed",
+                "scriptName": "OnCreatePostCompleted",
+                "isTrigger": true,
+                "isInvertible": false,
+                "isCompatibleWithTriggers": false
+            },
+
+            {
+                "id": "is-add-to-home-screen-supported",
+                "scriptName": "IsAddToHomeScreenSupported"
+            },
+            {
+                "id": "on-add-to-home-screen-completed",
+                "scriptName": "OnAddToHomeScreenCompleted",
+                "isTrigger": true,
+                "isInvertible": false,
+                "isCompatibleWithTriggers": false
+            },
+
+            {
+                "id": "is-add-to-favorites-supported",
+                "scriptName": "IsAddToFavoritesSupported"
+            },
+            {
+                "id": "on-add-to-favorites-completed",
+                "scriptName": "OnAddToFavoritesCompleted",
+                "isTrigger": true,
+                "isInvertible": false,
+                "isCompatibleWithTriggers": false
+            },
+
+            {
+                "id": "is-rate-supported",
+                "scriptName": "IsRateSupported"
+            },
+            {
+                "id": "on-rate-completed",
+                "scriptName": "OnRateCompleted",
+                "isTrigger": true,
+                "isInvertible": false,
+                "isCompatibleWithTriggers": false
+            },
+
+            {
+                "id": "is-external-links-allowed",
+                "scriptName": "IsExternalLinksAllowed"
+            }
+        ],
+        "actions": [
+            {
+                "id": "share",
+                "scriptName": "Share",
+                "isAsync": true
+            },
+            {
+                "id": "invite-friends",
+                "scriptName": "InviteFriends",
+                "isAsync": true
+            },
+            {
+                "id": "join-community",
+                "scriptName": "JoinCommunity",
+                "isAsync": true
+            },
+            {
+                "id": "create-post",
+                "scriptName": "CreatePost",
+                "isAsync": true
+            },
+            {
+                "id": "add-to-home-screen",
+                "scriptName": "AddToHomeScreen",
+                "isAsync": true
+            },
+            {
+                "id": "add-to-favorites",
+                "scriptName": "AddToFavorites",
+                "isAsync": true
+            },
+            {
+                "id": "rate",
+                "scriptName": "Rate",
+                "isAsync": true
+            }
+        ]
+    },
+    "leaderboard": {
+        "conditions": [
+            {
+                "id": "is-leaderboard-supported",
+                "scriptName": "IsLeaderboardSupported"
+            },
+            {
+                "id": "is-leaderboard-native-popup-supported",
+                "scriptName": "IsLeaderboardNativePopupSupported"
+            },
+            {
+                "id": "is-leaderboard-multiple-boards-supported",
+                "scriptName": "IsLeaderboardMultipleBoardsSupported"
+            },
+            {
+                "id": "is-leaderboard-set-score-supported",
+                "scriptName": "IsLeaderboardSetScoreSupported"
+            },
+            {
+                "id": "is-leaderboard-get-score-supported",
+                "scriptName": "IsLeaderboardGetScoreSupported"
+            },
+            {
+                "id": "is-leaderboard-get-entries-supported",
+                "scriptName": "IsLeaderboardGetEntriesSupported"
+            },
+
+            {
+                "id": "on-leaderboard-set-score-completed",
+                "scriptName": "OnLeaderboardSetScoreCompleted",
+                "isTrigger": true,
+                "isInvertible": false,
+                "isCompatibleWithTriggers": false
+            },
+
+            {
+                "id": "on-leaderboard-get-score-completed",
+                "scriptName": "OnLeaderboardGetScoreCompleted",
+                "isTrigger": true,
+                "isInvertible": false,
+                "isCompatibleWithTriggers": false
+            },
+
+            {
+                "id": "on-leaderboard-get-entries-completed",
+                "scriptName": "OnLeaderboardGetEntriesCompleted",
+                "isTrigger": true,
+                "isInvertible": false,
+                "isCompatibleWithTriggers": false
+            },
+
+            {
+                "id": "on-leaderboard-show-native-popup-completed",
+                "scriptName": "OnLeaderboardShowNativePopupCompleted",
+                "isTrigger": true,
+                "isInvertible": false,
+                "isCompatibleWithTriggers": false
+            }
+        ],
+        "actions": [
+            {
+                "id": "leaderboard-set-score",
+                "scriptName": "LeaderboardSetScore",
+                "isAsync": true
+            },
+            {
+                "id": "leaderboard-get-score",
+                "scriptName": "LeaderboardGetScore",
+                "isAsync": true
+            },
+            {
+                "id": "leaderboard-get-entries",
+                "scriptName": "LeaderboardGetEntries",
+                "isAsync": true
+            },
+            {
+                "id": "leaderboard-show-native-popup",
+                "scriptName": "LeaderboardShowNativePopup",
+                "isAsync": true
+            }
+        ],
+        "expressions": [
+            {
+                "id": "leaderboard-player-score",
+                "expressionName": "LeaderboardPlayerScore",
+                "returnType": "number"
+            },
+            {
+                "id": "leaderboard-entries-count",
+                "expressionName": "LeaderboardEntriesCount",
+                "returnType": "number"
+            },
+            {
+                "id": "leaderboard-entry-properties-count",
+                "expressionName": "LeaderboardEntryPropertiesCount",
+                "returnType": "number"
+            },
+            {
+                "id": "leaderboard-entry-property-name",
+                "expressionName": "LeaderboardEntryPropertyName",
+                "returnType": "string",
+                "params": [
+                    {
+                        "id": "property-index",
+                        "type": "number"
+                    }
+                ]
+            },
+            {
+                "id": "leaderboard-entry-property-value",
+                "expressionName": "LeaderboardEntryPropertyValue",
+                "returnType": "any",
+                "params": [
+                    {
+                        "id": "entry-index",
+                        "type": "number"
+                    },
+                    {
+                        "id": "property",
+                        "type": "any"
+                    }
+                ]
+            }
+        ]
+    },
+    "payments": {
+        "conditions": [
+            {
+                "id": "is-payments-supported",
+                "scriptName": "IsPaymentsSupported"
+            },
+            {
+                "id": "is-payments-get-catalog-supported",
+                "scriptName": "IsPaymentsGetCatalogSupported"
+            },
+            {
+                "id": "is-payments-get-purchases-supported",
+                "scriptName": "IsPaymentsGetPurchasesSupported"
+            },
+            {
+                "id": "is-payments-consume-purchase-supported",
+                "scriptName": "IsPaymentsConsumePurchaseSupported"
+            },
+
+            {
+                "id": "on-payments-purchase-completed",
+                "scriptName": "OnPaymentsPurchaseCompleted",
+                "isTrigger": true,
+                "isInvertible": false,
+                "isCompatibleWithTriggers": false
+            },
+
+            {
+                "id": "on-payments-get-purchases-completed",
+                "scriptName": "OnPaymentsGetPurchasesCompleted",
+                "isTrigger": true,
+                "isInvertible": false,
+                "isCompatibleWithTriggers": false
+            },
+
+            {
+                "id": "on-payments-get-catalog-completed",
+                "scriptName": "OnPaymentsGetCatalogCompleted",
+                "isTrigger": true,
+                "isInvertible": false,
+                "isCompatibleWithTriggers": false
+            },
+
+            {
+                "id": "on-payments-consume-purchase-completed",
+                "scriptName": "OnPaymentsConsumePurchaseCompleted",
+                "isTrigger": true,
+                "isInvertible": false,
+                "isCompatibleWithTriggers": false
+            }
+        ],
+        "actions": [
+            {
+                "id": "payments-purchase",
+                "scriptName": "PaymentsPurchase",
+                "isAsync": true
+            },
+            {
+                "id": "payments-get-purchases",
+                "scriptName": "PaymentsGetPurchases",
+                "isAsync": true
+            },
+            {
+                "id": "payments-get-catalog",
+                "scriptName": "PaymentsGetCatalog",
+                "isAsync": true
+            },
+            {
+                "id": "payments-consume-purchase",
+                "scriptName": "PaymentsConsumePurchase",
+                "isAsync": true
+            }
+        ],
+        "expressions": [
+            {
+                "id": "payments-last-purchase-properties-count",
+                "expressionName": "PaymentsLastPurchasePropertiesCount",
+                "returnType": "number"
+            },
+            {
+                "id": "payments-last-purchase-property-name",
+                "expressionName": "PaymentsLastPurchasePropertyName",
+                "returnType": "string",
+                "params": [
+                    {
+                        "id": "property-index",
+                        "type": "number"
+                    }
+                ]
+            },
+            {
+                "id": "payments-last-purchase-property-value",
+                "expressionName": "PaymentsLastPurchasePropertyValue",
+                "returnType": "any",
+                "params": [
+                    {
+                        "id": "property",
+                        "type": "any"
+                    }
+                ]
+            },
+            {
+                "id": "payments-purchases-count",
+                "expressionName": "PaymentsPurchasesCount",
+                "returnType": "number"
+            },
+            {
+                "id": "payments-purchase-properties-count",
+                "expressionName": "PaymentsPurchasePropertiesCount",
+                "returnType": "number"
+            },
+            {
+                "id": "payments-purchase-property-name",
+                "expressionName": "PaymentsPurchasePropertyName",
+                "returnType": "string",
+                "params": [
+                    {
+                        "id": "property-index",
+                        "type": "number"
+                    }
+                ]
+            },
+            {
+                "id": "payments-purchase-property-value",
+                "expressionName": "PaymentsPurchasePropertyValue",
+                "returnType": "any",
+                "params": [
+                    {
+                        "id": "purchase-index",
+                        "type": "number"
+                    },
+                    {
+                        "id": "property",
+                        "type": "any"
+                    }
+                ]
+            },
+
+            {
+                "id": "payments-catalog-items-count",
+                "expressionName": "PaymentsCatalogItemsCount",
+                "returnType": "number"
+            },
+            {
+                "id": "payments-catalog-item-properties-count",
+                "expressionName": "PaymentsCatalogItemPropertiesCount",
+                "returnType": "number"
+            },
+            {
+                "id": "payments-catalog-item-property-name",
+                "expressionName": "PaymentsCatalogItemPropertyName",
+                "returnType": "string",
+                "params": [
+                    {
+                        "id": "property-index",
+                        "type": "number"
+                    }
+                ]
+            },
+            {
+                "id": "payments-catalog-item-property-value",
+                "expressionName": "PaymentsCatalogItemPropertyValue",
+                "returnType": "any",
+                "params": [
+                    {
+                        "id": "item-index",
+                        "type": "number"
+                    },
+                    {
+                        "id": "property",
+                        "type": "any"
+                    }
+                ]
+            }
+        ]
+    },
+    "achievements": {
+        "conditions": [
+            {
+                "id": "is-achievements-supported",
+                "scriptName": "IsAchievementsSupported"
+            },
+            {
+                "id": "is-achievements-get-list-supported",
+                "scriptName": "IsAchievementsGetListSupported"
+            },
+            {
+                "id": "is-achievements-native-popup-supported",
+                "scriptName": "IsAchievementsNativePopupSupported"
+            },
+
+            {
+                "id": "on-achievements-unlock-completed",
+                "scriptName": "OnAchievementsUnlockCompleted",
+                "isTrigger": true,
+                "isInvertible": false,
+                "isCompatibleWithTriggers": false
+            },
+
+            {
+                "id": "on-achievements-get-list-completed",
+                "scriptName": "OnAchievementsGetListCompleted",
+                "isTrigger": true,
+                "isInvertible": false,
+                "isCompatibleWithTriggers": false
+            },
+
+            {
+                "id": "on-achievements-show-native-popup-completed",
+                "scriptName": "OnAchievementsShowNativePopupCompleted",
+                "isTrigger": true,
+                "isInvertible": false,
+                "isCompatibleWithTriggers": false
+            }
+        ],
+        "actions": [
+            {
+                "id": "achievements-unlock",
+                "scriptName": "AchievementsUnlock",
+                "isAsync": true
+            },
+            {
+                "id": "achievements-get-list",
+                "scriptName": "AchievementsGetList",
+                "isAsync": true
+            },
+            {
+                "id": "achievements-show-native-popup",
+                "scriptName": "AchievementsShowNativePopup",
+                "isAsync": true
+            }
+        ],
+        "expressions": [
+            {
+                "id": "achievements-count",
+                "expressionName": "AchievementsCount",
+                "returnType": "number"
+            },
+            {
+                "id": "achievement-properties-count",
+                "expressionName": "AchievementPropertiesCount",
+                "returnType": "number"
+            },
+            {
+                "id": "achievement-property-name",
+                "expressionName": "AchievementPropertyName",
+                "returnType": "string",
+                "params": [
+                    {
+                        "id": "property-index",
+                        "type": "number"
+                    }
+                ]
+            },
+            {
+                "id": "achievement-property-value",
+                "expressionName": "AchievementPropertyValue",
+                "returnType": "any",
+                "params": [
+                    {
+                        "id": "achievement-index",
+                        "type": "number"
+                    },
+                    {
+                        "id": "property",
+                        "type": "any"
+                    }
+                ]
+            }
+        ]
+    },
+    "remote-config": {
+        "conditions": [
+            {
+                "id": "is-remote-config-supported",
+                "scriptName": "IsRemoteConfigSupported"
+            },
+            {
+                "id": "on-remote-config-got-completed",
+                "scriptName": "OnRemoteConfigGotCompleted",
+                "isTrigger": true,
+                "isInvertible": false,
+                "isCompatibleWithTriggers": false
+            },
+            {
+                "id": "has-remote-config-value",
+                "scriptName": "HasRemoteConfigValue",
+                "params": [
+                    {
+                        "id": "key",
+                        "type": "string"
+                    }
+                ]
+            }
+        ],
+        "actions": [
+            {
+                "id": "send-remote-config-get-request",
+                "scriptName": "SendRemoteConfigGetRequest",
+                "isAsync": true
+            }
+        ],
+        "expressions": [
+            {
+                "id": "remote-config-value",
+                "expressionName": "RemoteConfigValue",
+                "returnType": "any",
+                "params": [
+                    {
+                        "id": "key",
+                        "type": "string"
+                    }
+                ]
+            }
+        ]
+    }
+}

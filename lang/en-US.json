@@ -1,0 +1,1139 @@
+{
+    "languageTag": "en-US",
+    "fileDescription": "Strings for PlaygamaBridge Plugin",
+    "text": {
+        "plugins": {
+            "playgamabridge": {
+                "name": "PlaygamaBridge",
+                "description": "One SDK for cross-platform publishing HTML5 games",
+                "author": "Playgama",
+                "help-url": "https://github.com/playgama",
+                "properties": {
+                    "load-sdk-from-cdn": {
+                        "name": "Load SDK from CDN",
+                        "desc": "If false - you should import SDK JS script into scripts folder and mark as main."
+                    },
+                    "custom-cdn-url": {
+                        "name": "Custom CDN URL",
+                        "desc": "Custom CDN URL for loading SDK."
+                    },
+                    "game-distribution-game-id": {
+                        "name": "GameDistribution Game ID",
+                        "desc": "Game ID, which you can find from your control panel on GameDistribution.com."
+                    },
+                    "y8-game-id": {
+                        "name": "Y8 Game ID",
+                        "desc": "Game ID, which you can find from your control panel on Y8.com."
+                    },
+                    "y8-channel-id": {
+                        "name": "Y8 Channel ID",
+                        "desc": "Channel ID, which you can find from your control panel on developers.google.com/google-ads."
+                    },
+                    "y8-adsense-id": {
+                        "name": "Y8 Adsense ID",
+                        "desc": "Adsense ID, which you can find from your control panel on developers.google.com/google-ads."
+                    },
+                    "lagged-dev-id": {
+                        "name": "Lagged Dev ID",
+                        "desc": "Dev ID, which you can find from your control panel on Lagged.dev."
+                    },
+                    "lagged-publisher-id": {
+                        "name": "Lagged publisher ID",
+                        "desc": "Publisher ID, which you can find from your control panel on Lagged.dev."
+                    },
+                    "facebook-placement-id": {
+                        "name": "Facebook Placement ID",
+                        "desc": "Placement ID, which you can find from your control panel on developers.facebook.com."
+                    },
+                    "adsgram-block-id": {
+                        "name": "Adsgram Block ID",
+                        "desc": "Advertisement block ID, which you can find from your control panel on adsgram.ai."
+                    },
+                    "show-interstitial-on-init": {
+                        "name": "Show Interstitial On Init",
+                        "desc": "Automatically show interstitial when SDK is initialized. Supported only on Game Distribution."
+                    }
+                },
+                "aceCategories": {
+                    "common": "Common",
+                    "platform": "Platform",
+                    "device": "Device",
+                    "player": "Player",
+                    "game": "Game",
+                    "storage": "Storage",
+                    "advertisement": "Advertisement",
+                    "social": "Social",
+                    "leaderboard": "Leaderboard",
+                    "payments": "Payments",
+                    "achievements": "Achievements",
+                    "remote-config": "Remote Config"
+                },
+                "conditions": {
+                    "is-last-action-completed-successfully": {
+                        "list-name": "IsLastActionCompletedSuccessfully",
+                        "display-text": "Is Last Action Completed Successfully",
+                        "description": "Is Last Action Completed Successfully"
+                    },
+
+
+                    "on-get-server-time-completed": {
+                        "list-name": "OnGetServerTimeCompleted",
+                        "display-text": "On Get Server Time Completed",
+                        "description": "On Get Server Time Completed"
+                    },
+                    "has-server-time": {
+                        "list-name": "HasServerTime",
+                        "display-text": "Has Server Time",
+                        "description": "Has Server Time"
+                    },
+
+
+                    "is-mobile": {
+                        "list-name": "IsMobile",
+                        "display-text": "Is Mobile",
+                        "description": "Is Mobile"
+                    },
+                    "is-tablet": {
+                        "list-name": "IsTablet",
+                        "display-text": "Is Tablet",
+                        "description": "Is Tablet"
+                    },
+                    "is-desktop": {
+                        "list-name": "IsDesktop",
+                        "display-text": "Is Desktop",
+                        "description": "Is Desktop"
+                    },
+                    "is-tv": {
+                        "list-name": "IsTv",
+                        "display-text": "Is Tv",
+                        "description": "Is Tv"
+                    },
+
+
+                    "is-player-authorization-supported": {
+                        "list-name": "IsPlayerAuthorizationSupported",
+                        "display-text": "Is Player Authorization Supported",
+                        "description": "Is Player Authorization Supported"
+                    },
+                    "is-player-authorized": {
+                        "list-name": "IsPlayerAuthorized",
+                        "display-text": "Is Player Authorized",
+                        "description": "Is Player Authorized"
+                    },
+                    "on-authorize-player-completed": {
+                        "list-name": "OnAuthorizePlayerCompleted",
+                        "display-text": "On Authorize Player Completed",
+                        "description": "On Authorize Player Completed"
+                    },
+
+                    "does-player-have-name": {
+                        "list-name": "DoesPlayerHaveName",
+                        "display-text": "Does Player Have Name",
+                        "description": "Does Player Have Name"
+                    },
+                    "does-player-have-photo": {
+                        "list-name": "DoesPlayerHavePhoto",
+                        "display-text": "Does Player Have Photo. Index: [b]{0}[/b].",
+                        "description": "Does Player Have Photo",
+                        "params": {
+                            "index": {
+                                "name": "Index",
+                                "desc": "Index"
+                            }
+                        }
+                    },
+
+
+                    "on-check-adblock-completed": {
+                        "list-name": "OnCheckAdBlockCompleted",
+                        "display-text": "On Check AdBlock Completed",
+                        "description": "On Check AdBlock Completed"
+                    },
+                    "is-adblock-detected": {
+                        "list-name": "IsAdBlockDetected",
+                        "display-text": "Is AdBlock Detected",
+                        "description": "Is AdBlock Detected"
+                    },
+
+
+                    "on-visibility-state-changed": {
+                        "list-name": "OnVisibilityStateChanged",
+                        "display-text": "On Visibility State Changed",
+                        "description": "On Visibility State Changed"
+                    },
+
+
+                    "is-storage-supported": {
+                        "list-name": "IsStorageSupported",
+                        "display-text": "Is Storage Supported: [b]{0}[/b].",
+                        "description": "Is Storage Supported",
+                        "params": {
+                            "storage-type": {
+                                "name": "StorageType",
+                                "desc": "Storage Type",
+                                "items": {
+                                    "local-storage": "LocalStorage",
+                                    "platform-internal": "PlatformInternal"
+                                }
+                            }
+                        }
+                    },
+                    "is-storage-available": {
+                        "list-name": "IsStorageAvailable",
+                        "display-text": "Is Storage Available: [b]{0}[/b].",
+                        "description": "Is Storage Available",
+                        "params": {
+                            "storage-type": {
+                                "name": "StorageType",
+                                "desc": "Storage Type",
+                                "items": {
+                                    "local-storage": "LocalStorage",
+                                    "platform-internal": "PlatformInternal"
+                                }
+                            }
+                        }
+                    },
+                    "has-storage-data": {
+                        "list-name": "HasStorageData",
+                        "display-text": "Has Storage Data By Key: [b]{0}[/b].",
+                        "description": "Has Storage Data By Key",
+                        "params": {
+                            "key": {
+                                "name": "Key",
+                                "desc": "Key"
+                            }
+                        }
+                    },
+
+                    "on-storage-data-get-request-completed": {
+                        "list-name": "OnStorageDataGetRequestCompleted",
+                        "display-text": "On Storage Data Get Request Completed",
+                        "description": "On Storage Data Get Request Completed"
+                    },
+                    "on-storage-data-set-request-completed": {
+                        "list-name": "OnStorageDataSetRequestCompleted",
+                        "display-text": "On Storage Data Set Request Completed",
+                        "description": "On Storage Data Set Request Completed"
+                    },
+                    "on-storage-data-delete-request-completed": {
+                        "list-name": "OnStorageDataDeleteRequestCompleted",
+                        "display-text": "On Storage Data Delete Request Completed",
+                        "description": "On Storage Data Delete Request Completed"
+                    },
+
+
+                    "is-banner-supported": {
+                        "list-name": "IsBannerSupported",
+                        "display-text": "Is Banner Supported",
+                        "description": "Is Banner Supported"
+                    },
+                    "on-banner-state-changed": {
+                        "list-name": "OnBannerStateChanged",
+                        "display-text": "On Banner State Changed",
+                        "description": "On Banner State Changed"
+                    },
+                    "on-banner-loading": {
+                        "list-name": "OnBannerLoading",
+                        "display-text": "On Banner Loading",
+                        "description": "On Banner Loading"
+                    },
+                    "on-banner-shown": {
+                        "list-name": "OnBannerShown",
+                        "display-text": "On Banner Shown",
+                        "description": "On Banner Shown"
+                    },
+                    "on-banner-hidden": {
+                        "list-name": "OnBannerHidden",
+                        "display-text": "On Banner Hidden",
+                        "description": "On Banner Hidden"
+                    },
+                    "on-banner-failed": {
+                        "list-name": "OnBannerFailed",
+                        "display-text": "On Banner Failed",
+                        "description": "On Banner Failed"
+                    },
+
+                    "on-interstitial-state-changed": {
+                        "list-name": "OnInterstitialStateChanged",
+                        "display-text": "On Interstitial State Changed",
+                        "description": "On Interstitial State Changed"
+                    },
+                    "on-interstitial-loading": {
+                        "list-name": "OnInterstitialLoading",
+                        "display-text": "On Interstitial Loading",
+                        "description": "On Interstitial Loading"
+                    },
+                    "on-interstitial-opened": {
+                        "list-name": "OnInterstitialOpened",
+                        "display-text": "On Interstitial Opened",
+                        "description": "On Interstitial Opened"
+                    },
+                    "on-interstitial-closed": {
+                        "list-name": "OnInterstitialClosed",
+                        "display-text": "On Interstitial Closed",
+                        "description": "On Interstitial Closed"
+                    },
+                    "on-interstitial-failed": {
+                        "list-name": "OnInterstitialFailed",
+                        "display-text": "On Interstitial Failed",
+                        "description": "On Interstitial Failed"
+                    },
+
+                    "on-rewarded-state-changed": {
+                        "list-name": "OnRewardedStateChanged",
+                        "display-text": "On Rewarded State Changed",
+                        "description": "On Rewarded State Changed"
+                    },
+                    "on-rewarded-loading": {
+                        "list-name": "OnRewardedLoading",
+                        "display-text": "On Rewarded Loading",
+                        "description": "On Rewarded Loading"
+                    },
+                    "on-rewarded-opened": {
+                        "list-name": "OnRewardedOpened",
+                        "display-text": "On Rewarded Opened",
+                        "description": "On Rewarded Opened"
+                    },
+                    "on-rewarded-rewarded": {
+                        "list-name": "OnRewardedRewarded",
+                        "display-text": "On Rewarded Rewarded",
+                        "description": "On Rewarded Rewarded"
+                    },
+                    "on-rewarded-closed": {
+                        "list-name": "OnRewardedClosed",
+                        "display-text": "On Rewarded Closed",
+                        "description": "On Rewarded Closed"
+                    },
+                    "on-rewarded-failed": {
+                        "list-name": "OnRewardedFailed",
+                        "display-text": "On Rewarded Failed",
+                        "description": "On Rewarded Failed"
+                    },
+
+
+                    "is-share-supported": {
+                        "list-name": "IsShareSupported",
+                        "display-text": "Is Share Supported",
+                        "description": "Is Share Supported"
+                    },
+                    "on-share-completed": {
+                        "list-name": "OnShareCompleted",
+                        "display-text": "On Share Completed",
+                        "description": "On Share Completed"
+                    },
+
+                    "is-invite-friends-supported": {
+                        "list-name": "IsInviteFriendsSupported",
+                        "display-text": "Is Invite Friends Supported",
+                        "description": "Is Invite Friends Supported"
+                    },
+                    "on-invite-friends-completed": {
+                        "list-name": "OnInviteFriendsCompleted",
+                        "display-text": "On Invite Friends Completed",
+                        "description": "On Invite Friends Completed"
+                    },
+
+                    "is-join-community-supported": {
+                        "list-name": "IsJoinCommunitySupported",
+                        "display-text": "Is Join Community Supported",
+                        "description": "Is Join Community Supported"
+                    },
+                    "on-join-community-completed": {
+                        "list-name": "OnJoinCommunityCompleted",
+                        "display-text": "On Join Community Completed",
+                        "description": "On Join Community Completed"
+                    },
+
+                    "is-create-post-supported": {
+                        "list-name": "IsCreatePostSupported",
+                        "display-text": "Is Create Post Supported",
+                        "description": "Is Create Post Supported"
+                    },
+                    "on-create-post-completed": {
+                        "list-name": "OnCreatePostCompleted",
+                        "display-text": "On Create Post Completed",
+                        "description": "On Create Post Completed"
+                    },
+
+                    "is-add-to-home-screen-supported": {
+                        "list-name": "IsAddToHomeScreenSupported",
+                        "display-text": "Is Add To Home Screen Supported",
+                        "description": "Is Add To Home Screen Supported"
+                    },
+                    "on-add-to-home-screen-completed": {
+                        "list-name": "OnAddToHomeScreenCompleted",
+                        "display-text": "On Add To Home Screen Completed",
+                        "description": "On Add To Home Screen Completed"
+                    },
+
+                    "is-add-to-favorites-supported": {
+                        "list-name": "IsAddToFavoritesSupported",
+                        "display-text": "Is Add To Favorites Supported",
+                        "description": "Is Add To Favorites Supported"
+                    },
+                    "on-add-to-favorites-completed": {
+                        "list-name": "OnAddToFavoritesCompleted",
+                        "display-text": "On Add To Favorites Completed",
+                        "description": "On Add To Favorites Completed"
+                    },
+
+                    "is-rate-supported": {
+                        "list-name": "IsRateSupported",
+                        "display-text": "Is Rate Supported",
+                        "description": "Is Rate Supported"
+                    },
+                    "on-rate-completed": {
+                        "list-name": "OnRateCompleted",
+                        "display-text": "On Rate Completed",
+                        "description": "On Rate Completed"
+                    },
+
+                    "is-external-links-allowed": {
+                        "list-name": "IsExternalLinksAllowed",
+                        "display-text": "Is External Links Allowed",
+                        "description": "Is External Links Allowed"
+                    },
+
+
+                    "is-leaderboard-supported": {
+                        "list-name": "IsLeaderboardSupported",
+                        "display-text": "Is Leaderboard Supported",
+                        "description": "Is Leaderboard Supported"
+                    },
+                    "is-leaderboard-native-popup-supported": {
+                        "list-name": "IsLeaderboardNativePopupSupported",
+                        "display-text": "Is Leaderboard Native Popup Supported",
+                        "description": "Is Leaderboard Native Popup Supported"
+                    },
+                    "is-leaderboard-multiple-boards-supported": {
+                        "list-name": "IsLeaderboardMultipleBoardsSupported",
+                        "display-text": "Is Leaderboard Multiple Boards Supported",
+                        "description": "Is Leaderboard Multiple Boards Supported"
+                    },
+                    "is-leaderboard-set-score-supported": {
+                        "list-name": "IsLeaderboardSetScoreSupported",
+                        "display-text": "Is Leaderboard Set Score Supported",
+                        "description": "Is Leaderboard Set Score Supported"
+                    },
+                    "is-leaderboard-get-score-supported": {
+                        "list-name": "IsLeaderboardGetScoreSupported",
+                        "display-text": "Is Leaderboard Get Score Supported",
+                        "description": "Is Leaderboard Get Score Supported"
+                    },
+                    "is-leaderboard-get-entries-supported": {
+                        "list-name": "IsLeaderboardGetEntriesSupported",
+                        "display-text": "Is Leaderboard Get Entries Supported",
+                        "description": "Is Leaderboard Get Entries Supported"
+                    },
+
+                    "on-leaderboard-set-score-completed": {
+                        "list-name": "OnLeaderboardSetScoreCompleted",
+                        "display-text": "On Leaderboard Set Score Completed",
+                        "description": "On Leaderboard Set Score Completed"
+                    },
+                    "on-leaderboard-get-score-completed": {
+                        "list-name": "OnLeaderboardGetScoreCompleted",
+                        "display-text": "On Leaderboard Get Score Completed",
+                        "description": "On Leaderboard Get Score Completed"
+                    },
+                    "on-leaderboard-get-entries-completed": {
+                        "list-name": "OnLeaderboardGetEntriesCompleted",
+                        "display-text": "On Leaderboard Get Entries Completed",
+                        "description": "On Leaderboard Get Entries Completed"
+                    },
+                    "on-leaderboard-show-native-popup-completed": {
+                        "list-name": "OnLeaderboardShowNativePopupCompleted",
+                        "display-text": "On Leaderboard Show Native Popup Completed",
+                        "description": "On Leaderboard Show Native Popup Completed"
+                    },
+
+
+                    "is-payments-supported": {
+                        "list-name": "IsPaymentsSupported",
+                        "display-text": "Is Payments Supported",
+                        "description": "Is Payments Supported"
+                    },
+                    "is-payments-get-catalog-supported": {
+                        "list-name": "IsPaymentsGetCatalogSupported",
+                        "display-text": "Is Payments Get Catalog Supported",
+                        "description": "Is Payments Get Catalog Supported"
+                    },
+                    "is-payments-get-purchases-supported": {
+                        "list-name": "IsPaymentsGetPurchasesSupported",
+                        "display-text": "Is Payments Get Purchases Supported",
+                        "description": "Is Payments Get Purchases Supported"
+                    },
+                    "is-payments-consume-purchase-supported": {
+                        "list-name": "IsPaymentsConsumePurchaseSupported",
+                        "display-text": "Is Payments Consume Purchase Supported",
+                        "description": "Is Payments Consume Purchase Supported"
+                    },
+                    "on-payments-purchase-completed": {
+                        "list-name": "OnPaymentsPurchaseCompleted",
+                        "display-text": "On Payments Purchase Completed",
+                        "description": "On Payments Purchase Completed"
+                    },
+                    "on-payments-get-purchases-completed": {
+                        "list-name": "OnPaymentsGetPurchasesCompleted",
+                        "display-text": "On Payments Get Purchases Completed",
+                        "description": "On Payments Get Purchases Completed"
+                    },
+                    "on-payments-get-catalog-completed": {
+                        "list-name": "OnPaymentsGetCatalogCompleted",
+                        "display-text": "On Payments Get Catalog Completed",
+                        "description": "On Payments Get Catalog Completed"
+                    },
+                    "on-payments-consume-purchase-completed": {
+                        "list-name": "OnPaymentsConsumePurchaseCompleted",
+                        "display-text": "On Payments Consume Purchase Completed",
+                        "description": "On Payments Consume Purchase Completed"
+                    },
+
+                    "is-achievements-supported": {
+                        "list-name": "IsAchievementsSupported",
+                        "display-text": "Is Achievements Supported",
+                        "description": "Is Achievements Supported"
+                    },
+                    "is-achievements-get-list-supported": {
+                        "list-name": "IsAchievementsGetListSupported",
+                        "display-text": "Is Achievements Get List Supported",
+                        "description": "Is Achievements Get List Supported"
+                    },
+                    "is-achievements-native-popup-supported": {
+                        "list-name": "IsAchievementsNativePopupSupported",
+                        "display-text": "Is Achievements Native Popup Supported",
+                        "description": "Is Achievements Native Popup Supported"
+                    },
+                    "on-achievements-unlock-completed": {
+                        "list-name": "OnAchievementsUnlockCompleted",
+                        "display-text": "On Achievements Unlock Completed",
+                        "description": "On Achievements Unlock Completed"
+                    },
+                    "on-achievements-get-list-completed": {
+                        "list-name": "OnAchievementsGetListCompleted",
+                        "display-text": "On Achievements Get List Completed",
+                        "description": "On Achievements Get List Completed"
+                    },
+                    "on-achievements-show-native-popup-completed": {
+                        "list-name": "OnAchievementsShowNativePopupCompleted",
+                        "display-text": "On Achievements Show Native Popup Completed",
+                        "description": "On Achievements Show Native Popup Completed"
+                    },
+
+
+                    "is-remote-config-supported": {
+                        "list-name": "IsRemoteConfigSupported",
+                        "display-text": "Is Remote Config Supported",
+                        "description": "Is Remote Config Supported"
+                    },
+                    "on-remote-config-got-completed": {
+                        "list-name": "OnRemoteConfigGotCompleted",
+                        "display-text": "On Remote Config Got Completed",
+                        "description": "On Remote Config Got Completed"
+                    },
+                    "has-remote-config-value": {
+                        "list-name": "HasRemoteConfigValue",
+                        "display-text": "Has Remote Config Value. Key: [b]{0}[/b]",
+                        "description": "Has Remote Config Value",
+                        "params": {
+                            "key": {
+                                "name": "Key",
+                                "desc": "Key"
+                            }
+                        }
+                    }
+                },
+                "actions": {
+                    "add-action-parameter": {
+                        "list-name": "AddActionParameter",
+                        "display-text": "Add Action Parameter. Key: [b]{0}[/b], Value: [b]{1}[/b].",
+                        "description": "Add Action Parameter",
+                        "params": {
+                            "key": {
+                                "name": "Key",
+                                "desc": "Key"
+                            },
+                            "value": {
+                                "name": "Value",
+                                "desc": "Value"
+                            }
+                        }
+                    },
+                    "add-bool-action-parameter": {
+                        "list-name": "AddBoolActionParameter",
+                        "display-text": "Add Bool Action Parameter. Key: [b]{0}[/b], Value: [b]{1}[/b].",
+                        "description": "Add Bool Action Parameter",
+                        "params": {
+                            "key": {
+                                "name": "Key",
+                                "desc": "Key"
+                            },
+                            "value": {
+                                "name": "Value",
+                                "desc": "Value"
+                            }
+                        }
+                    },
+
+
+                    "send-message": {
+                        "list-name": "SendMessage",
+                        "display-text": "Send Message to Platform. Message: [b]{0}[/b].",
+                        "description": "Send Message to Platform",
+                        "params": {
+                            "message": {
+                                "name": "Message",
+                                "desc": "Message",
+                                "items": {
+                                    "game-ready": "Game Ready",
+                                    "in-game-loading-started": "In-Game Loading Started",
+                                    "in-game-loading-stopped": "In-Game Loading Stopped",
+                                    "gameplay-started": "Gameplay Started",
+                                    "gameplay-stopped": "Gameplay Stopped",
+                                    "player-got-achievement": "Player Got Achievement"
+                                }
+                            }
+                        }
+                    },
+                    "get-server-time": {
+                        "list-name": "GetServerTime",
+                        "display-text": "Get Server Time",
+                        "description": "Get Server Time"
+                    },
+
+
+                    "authorize-player": {
+                        "list-name": "AuthorizePlayer",
+                        "display-text": "Authorize Player",
+                        "description": "Authorize Player"
+                    },
+
+
+                    "append-storage-data-get-request": {
+                        "list-name": "AppendStorageDataGetRequest",
+                        "display-text": "Append Storage Data Get Request. Key: [b]{0}[/b].",
+                        "description": "Append Storage Data Get Request",
+                        "params": {
+                            "key": {
+                                "name": "Key",
+                                "desc": "Key"
+                            }
+                        }
+                    },
+                    "send-storage-data-get-request": {
+                        "list-name": "SendStorageDataGetRequest",
+                        "display-text": "Send Storage Data Get Request. Storage: [b]{0}[/b].",
+                        "description": "Send Storage Data Get Request",
+                        "params": {
+                            "storage-type": {
+                                "name": "StorageType",
+                                "desc": "Storage Type",
+                                "items": {
+                                    "default": "Default",
+                                    "local-storage": "LocalStorage",
+                                    "platform-internal": "PlatformInternal"
+                                }
+                            }
+                        }
+                    },
+
+                    "append-storage-data-set-request": {
+                        "list-name": "AppendStorageDataSetRequest",
+                        "display-text": "Append Storage Data Set Request. Key: [b]{0}[/b]. Value: [b]{1}[/b].",
+                        "description": "Append Storage Data Set Request",
+                        "params": {
+                            "key": {
+                                "name": "Key",
+                                "desc": "Key"
+                            },
+                            "value": {
+                                "name": "Value",
+                                "desc": "Value"
+                            }
+                        }
+                    },
+                    "send-storage-data-set-request": {
+                        "list-name": "SendStorageDataSetRequest",
+                        "display-text": "Send Storage Data Set Request. Storage: [b]{0}[/b].",
+                        "description": "Send Storage Data Set Request",
+                        "params": {
+                            "storage-type": {
+                                "name": "StorageType",
+                                "desc": "Storage Type",
+                                "items": {
+                                    "default": "Default",
+                                    "local-storage": "LocalStorage",
+                                    "platform-internal": "PlatformInternal"
+                                }
+                            }
+                        }
+                    },
+
+                    "append-storage-data-delete-request": {
+                        "list-name": "AppendStorageDataDeleteRequest",
+                        "display-text": "Append Storage Data Delete Request. Key: [b]{0}[/b].",
+                        "description": "Append Storage Data Delete Request",
+                        "params": {
+                            "key": {
+                                "name": "Key",
+                                "desc": "Key"
+                            }
+                        }
+                    },
+                    "send-storage-data-delete-request": {
+                        "list-name": "SendStorageDataDeleteRequest",
+                        "display-text": "Send Storage Data Delete Request. Storage: [b]{0}[/b].",
+                        "description": "Send Storage Data Delete Request",
+                        "params": {
+                            "storage-type": {
+                                "name": "StorageType",
+                                "desc": "Storage Type",
+                                "items": {
+                                    "default": "Default",
+                                    "local-storage": "LocalStorage",
+                                    "platform-internal": "PlatformInternal"
+                                }
+                            }
+                        }
+                    },
+
+
+                    "show-banner": {
+                        "list-name": "ShowBanner",
+                        "display-text": "Show Banner",
+                        "description": "Show Banner"
+                    },
+                    "hide-banner": {
+                        "list-name": "HideBanner",
+                        "display-text": "Hide Banner",
+                        "description": "Hide Banner"
+                    },
+                    "set-minimum-delay-between-interstitial": {
+                        "list-name": "SetMinimumDelayBetweenInterstitial",
+                        "display-text": "Set Minimum Delay Between Interstitial. Seconds: [b]{0}[/b].",
+                        "description": "Set Minimum Delay Between Interstitial",
+                        "params": {
+                            "seconds": {
+                                "name": "Seconds",
+                                "desc": "Seconds"
+                            }
+                        }
+                    },
+                    "show-interstitial": {
+                        "list-name": "ShowInterstitial",
+                        "display-text": "Show Interstitial. Ignore Delay [b]{0}[/b].",
+                        "description": "Show Interstitial",
+                        "params": {
+                            "ignore-delay": {
+                                "name": "Ignore Delay",
+                                "desc": "Ignore Delay"
+                            }
+                        }
+                    },
+                    "show-rewarded": {
+                        "list-name": "ShowRewarded",
+                        "display-text": "Show Rewarded",
+                        "description": "Show Rewarded"
+                    },
+                    "check-adblock": {
+                        "list-name": "CheckAdBlock",
+                        "display-text": "Check Ad Block",
+                        "description": "Check Ad Block"
+                    },
+
+
+                    "share": {
+                        "list-name": "Share",
+                        "display-text": "Share",
+                        "description": "Share"
+                    },
+                    "invite-friends": {
+                        "list-name": "InviteFriends",
+                        "display-text": "Invite Friends",
+                        "description": "Invite Friends"
+                    },
+                    "join-community": {
+                        "list-name": "JoinCommunity",
+                        "display-text": "Join Community",
+                        "description": "Join Community"
+                    },
+                    "create-post": {
+                        "list-name": "CreatePost",
+                        "display-text": "Create Post",
+                        "description": "Create Post"
+                    },
+                    "add-to-home-screen": {
+                        "list-name": "AddToHomeScreen",
+                        "display-text": "Add To Home Screen",
+                        "description": "Add To Home Screen"
+                    },
+                    "add-to-favorites": {
+                        "list-name": "AddToFavorites",
+                        "display-text": "Add To Favorites",
+                        "description": "Add To Favorites"
+                    },
+                    "rate": {
+                        "list-name": "Rate",
+                        "display-text": "Rate",
+                        "description": "Rate"
+                    },
+
+
+                    "leaderboard-set-score": {
+                        "list-name": "LeaderboardSetScore",
+                        "display-text": "Set Leaderboard Score",
+                        "description": "Set Leaderboard Score"
+                    },
+                    "leaderboard-get-score": {
+                        "list-name": "LeaderboardGetScore",
+                        "display-text": "Get Leaderboard Score",
+                        "description": "Get Leaderboard Score"
+                    },
+                    "leaderboard-get-entries": {
+                        "list-name": "LeaderboardGetEntries",
+                        "display-text": "Get Leaderboard Entries",
+                        "description": "Get Leaderboard Entries"
+                    },
+                    "leaderboard-show-native-popup": {
+                        "list-name": "LeaderboardShowNativePopup",
+                        "display-text": "Show Leaderboard Native Popup",
+                        "description": "Show Leaderboard Native Popup"
+                    },
+
+
+                    "payments-purchase": {
+                        "list-name": "PaymentsPurchase",
+                        "display-text": "Payments Purchase",
+                        "description": "Payments Purchase"
+                    },
+                    "payments-get-purchases": {
+                        "list-name": "PaymentsGetPurchases",
+                        "display-text": "Payments Get Purchases",
+                        "description": "Payments Get Purchases"
+                    },
+                    "payments-get-catalog": {
+                        "list-name": "PaymentsGetCatalog",
+                        "display-text": "Payments Get Catalog",
+                        "description": "Payments Get Catalog"
+                    },
+                    "payments-consume-purchase": {
+                        "list-name": "PaymentsConsumePurchase",
+                        "display-text": "Payments Consume Purchase",
+                        "description": "Payments Consume Purchase"
+                    },
+
+                    "achievements-unlock": {
+                        "list-name": "AchievementsUnlock",
+                        "display-text": "Achievements Unlock",
+                        "description": "Achievements Unlock"
+                    },
+                    "achievements-get-list": {
+                        "list-name": "AchievementsGetList",
+                        "display-text": "Achievements Get List",
+                        "description": "Achievements Get List"
+                    },
+                    "achievements-show-native-popup": {
+                        "list-name": "AchievementsShowNativePopup",
+                        "display-text": "Achievements Show Native Popup",
+                        "description": "Achievements Show Native Popup"
+                    },
+
+
+                    "send-remote-config-get-request": {
+                        "list-name": "SendRemoteConfigGetRequest",
+                        "display-text": "Send Remote Config Get Request",
+                        "description": "Send Remote Config Get Request"
+                    }
+                },
+                "expressions": {
+                    "platform-id": {
+                        "translated-name": "PlatformId",
+                        "description": "Platform ID"
+                    },
+                    "platform-language": {
+                        "translated-name": "PlatformLanguage",
+                        "description": "Platform Language"
+                    },
+                    "platform-payload": {
+                        "translated-name": "PlatformPayload",
+                        "description": "Platform Payload"
+                    },
+                    "platform-tld": {
+                        "translated-name": "PlatformTld",
+                        "description": "Platform Tld"
+                    },
+                    "server-time": {
+                        "translated-name": "ServerTime",
+                        "description": "Server Time"
+                    },
+
+
+                    "device-type": {
+                        "translated-name": "DeviceType",
+                        "description": "Device Type"
+                    },
+
+
+                    "player-id": {
+                        "translated-name": "PlayerId",
+                        "description": "Player ID"
+                    },
+                    "player-name": {
+                        "translated-name": "PlayerName",
+                        "description": "Player Name"
+                    },
+                    "player-photos-count": {
+                        "translated-name": "PlayerPhotosCount",
+                        "description": "Player Photos Count"
+                    },
+                    "player-photo": {
+                        "translated-name": "PlayerPhoto",
+                        "description": "Player Photo",
+                        "params": {
+                            "index": {
+                                "name": "Index",
+                                "desc": "Index"
+                            }
+                        }
+                    },
+
+                    "visibility-state": {
+                        "translated-name": "VisibilityState",
+                        "description": "Visibility State"
+                    },
+
+                    "default-storage-type": {
+                        "translated-name": "DefaultStorageType",
+                        "description": "Default Storage Type"
+                    },
+                    "storage-data": {
+                        "translated-name": "StorageData",
+                        "description": "Get Storage Data By Key",
+                        "params": {
+                            "key": {
+                                "name": "Key",
+                                "desc": "Key"
+                            }
+                        }
+                    },
+                    "storage-data-as-json": {
+                        "translated-name": "StorageDataAsJson",
+                        "description": "Get Storage Data By Key Converted To JSON",
+                        "params": {
+                            "key": {
+                                "name": "Key",
+                                "desc": "Key"
+                            }
+                        }
+                    },
+
+
+                    "banner-state": {
+                        "translated-name": "BannerState",
+                        "description": "Banner State"
+                    },
+                    "interstitial-state": {
+                        "translated-name": "InterstitialState",
+                        "description": "Interstitial State"
+                    },
+                    "rewarded-state": {
+                        "translated-name": "RewardedState",
+                        "description": "Rewarded State"
+                    },
+                    "minimum-delay-between-interstitial": {
+                        "translated-name": "MinimumDelayBetweenInterstitial",
+                        "description": "Minimum Delay Between Interstitial"
+                    },
+
+
+                    "leaderboard-player-score": {
+                        "translated-name": "LeaderboardPlayerScore",
+                        "description": "Leaderboard Player Score"
+                    },
+                    "leaderboard-entries-count": {
+                        "translated-name": "LeaderboardEntriesCount",
+                        "description": "Leaderboard Entries Count"
+                    },
+                    "leaderboard-entry-properties-count": {
+                        "translated-name": "LeaderboardEntryPropertiesCount",
+                        "description": "Leaderboard Entry Properties Count"
+                    },
+                    "leaderboard-entry-property-name": {
+                        "translated-name": "LeaderboardEntryPropertyName",
+                        "description": "Leaderboard Entry Property Name",
+                        "params": {
+                            "entry-index": {
+                                "name": "Entry Index",
+                                "desc": "Entry Index"
+                            },
+                            "property-index": {
+                                "name": "Property Index",
+                                "desc": "Property Index"
+                            }
+                        }
+                    },
+                    "leaderboard-entry-property-value": {
+                        "translated-name": "LeaderboardEntryPropertyValue",
+                        "description": "Leaderboard Entry Property Value",
+                        "params": {
+                            "entry-index": {
+                                "name": "Entry Index",
+                                "desc": "Entry Index"
+                            },
+                            "property": {
+                                "name": "Property",
+                                "desc": "Property"
+                            }
+                        }
+                    },
+
+                    "payments-last-purchase-properties-count": {
+                        "translated-name": "PaymentsLastPurchasePropertiesCount",
+                        "description": "Payments Last Purchase Properties Count"
+                    },
+                    "payments-last-purchase-property-name": {
+                        "translated-name": "PaymentsLastPurchasePropertyName",
+                        "description": "Payments Last Purchase Property Name",
+                        "params": {
+                            "property-index": {
+                                "name": "Property Index",
+                                "desc": "Property Index"
+                            }
+                        }
+                    },
+                    "payments-last-purchase-property-value": {
+                        "translated-name": "PaymentsLastPurchasePropertyValue",
+                        "description": "Payments Last Purchase Property Value",
+                        "params": {
+                            "property": {
+                                "name": "Property",
+                                "desc": "Property"
+                            }
+                        }
+                    },
+                    "payments-purchases-count": {
+                        "translated-name": "PaymentsPurchasesCount",
+                        "description": "Payments Purchases Count"
+                    },
+                    "payments-purchase-properties-count": {
+                        "translated-name": "PaymentsPurchasePropertiesCount",
+                        "description": "Payments Purchase Properties Count"
+                    },
+                    "payments-purchase-property-name": {
+                        "translated-name": "PaymentsPurchasePropertyName",
+                        "description": "Payments Purchase Property Name",
+                        "params": {
+                            "purchase-index": {
+                                "name": "Purchase Index",
+                                "desc": "Purchase Index"
+                            },
+                            "property-index": {
+                                "name": "Property Index",
+                                "desc": "Property Index"
+                            }
+                        }
+                    },
+                    "payments-purchase-property-value": {
+                        "translated-name": "PaymentsPurchasePropertyValue",
+                        "description": "Payments Purchase Property Value",
+                        "params": {
+                            "purchase-index": {
+                                "name": "Purchase Index",
+                                "desc": "Purchase Index"
+                            },
+                            "property": {
+                                "name": "Property",
+                                "desc": "Property"
+                            }
+                        }
+                    },
+
+                    "payments-catalog-items-count": {
+                        "translated-name": "PaymentsCatalogItemsCount",
+                        "description": "Payments Catalog Items Count"
+                    },
+                    "payments-catalog-item-properties-count": {
+                        "translated-name": "PaymentsCatalogItemPropertiesCount",
+                        "description": "Payments Catalog Item Properties Count"
+                    },
+                    "payments-catalog-item-property-name": {
+                        "translated-name": "PaymentsCatalogItemPropertyName",
+                        "description": "Payments Catalog Item Property Name",
+                        "params": {
+                            "item-index": {
+                                "name": "Item Index",
+                                "desc": "Item Index"
+                            },
+                            "property-index": {
+                                "name": "Property Index",
+                                "desc": "Property Index"
+                            }
+                        }
+                    },
+                    "payments-catalog-item-property-value": {
+                        "translated-name": "PaymentsCatalogItemPropertyValue",
+                        "description": "Payments Catalog Item Property Value",
+                        "params": {
+                            "item-index": {
+                                "name": "Item Index",
+                                "desc": "Item Index"
+                            },
+                            "property": {
+                                "name": "Property",
+                                "desc": "Property"
+                            }
+                        }
+                    },
+
+                    "achievements-count": {
+                        "translated-name": "AchievementsCount",
+                        "description": "Achievements Count"
+                    },
+                    "achievement-properties-count": {
+                        "translated-name": "AchievementPropertiesCount",
+                        "description": "Achievement Properties Count"
+                    },
+                    "achievement-property-name": {
+                        "translated-name": "AchievementPropertyName",
+                        "description": "Achievement Property Name",
+                        "params": {
+                            "achievement-index": {
+                                "name": "Achievement Index",
+                                "desc": "Achievement Index"
+                            },
+                            "property-index": {
+                                "name": "Property Index",
+                                "desc": "Property Index"
+                            }
+                        }
+                    },
+                    "achievement-property-value": {
+                        "translated-name": "AchievementPropertyValue",
+                        "description": "Achievement Property Value",
+                        "params": {
+                            "achievement-index": {
+                                "name": "Achievement Index",
+                                "desc": "Achievement Index"
+                            },
+                            "property": {
+                                "name": "Property",
+                                "desc": "Property"
+                            }
+                        }
+                    },
+
+                    "remote-config-value": {
+                        "translated-name": "RemoteConfigValue",
+                        "description": "Remote Config Value",
+                        "params": {
+                            "key": {
+                                "name": "Key",
+                                "desc": "Key"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
